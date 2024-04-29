@@ -1,0 +1,21 @@
+@font-face {
+}
+:root {
+  --main-color: #0078ff;
+  --main-color-rgb: 0, 120, 255;
+  --inset-color: #cde1f8;
+  --inset-color-rgb: rgb(205, 225, 248);
+  --body-color: #4e4e4e;
+  --body-color-rgb: rgb(78, 78, 78);
+  --main-body-color: #1e1e1e;
+  --main-body-color-rgb: rgb(30, 30, 30);
+  --white-color: #ffffff;
+  --white-color-rgb: rgb(255, 255, 255);
+}
+nav .container a {
+  font-weight: 600;
+  padding: 0.5rem;
+}
+nav .container ul li {
+  padding: 0 0.5rem;
+}
