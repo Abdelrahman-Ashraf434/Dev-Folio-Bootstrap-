@@ -1,10 +1,19 @@
-@font-face {
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
 :root {
   --main-color: #0078ff;
   --main-color-rgb: 0, 120, 255;
   --inset-color: #cde1f8;
   --inset-color-rgb: rgb(205, 225, 248);
+  --bg-color: #f5f5f5;
+  --bg-color-rgb: rgb(245, 245, 245);
   --body-color: #4e4e4e;
   --body-color-rgb: rgb(78, 78, 78);
   --main-body-color: #1e1e1e;
@@ -12,10 +21,153 @@
   --white-color: #ffffff;
   --white-color-rgb: rgb(255, 255, 255);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--main-body-color);
+}
 nav .container a {
   font-weight: 600;
   padding: 0.5rem;
 }
 nav .container ul li {
   padding: 0 0.5rem;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/Images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.btn-toggle span {
+  color: var(--white-color);
+}
+header .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+header h2 {
+  font-size: 2.6rem;
+  margin-bottom: 7rem;
+}
+header span {
+  color: var(--white-color);
+  font-weight: 700;
+  animation: Word 4s infinite;
+}
+@keyframes Word {
+  0% {
+    content: "|";
+  }
+  5% {
+    content: "D|";
+  }
+  10% {
+    content: "De|";
+  }
+  15% {
+    content: "Dev|";
+  }
+  20% {
+    content: "Deve|";
+  }
+  25% {
+    content: "Devel|";
+  }
+  30% {
+    content: "Develo|";
+  }
+  35% {
+    content: "Develop|";
+  }
+  40% {
+    content: "Develope|";
+  }
+  45% {
+    content: "Developer|";
+  }
+  50% {
+    content: "Develope|";
+  }
+  55% {
+    content: "Develop|";
+  }
+  60% {
+    content: "Develo|";
+  }
+  65% {
+    content: "Devel|";
+  }
+  70% {
+    content: "Deve|";
+  }
+  75% {
+    content: "Dev|";
+  }
+  80% {
+    content: "De|";
+  }
+  85% {
+    content: "D|";
+  }
+  100% {
+    content: "|";
+  }
+}
+.about-me,
+.services {
+  background-color: var(--bg-color);
+}
+.card-2 h5 {
+  font-size: 2rem;
+  position: relative;
+}
+.card-2 h5::after {
+  content: "";
+  position: absolute;
+  width: 21%;
+  margin-top: 0.2rem;
+  height: 8%;
+  display: block;
+  background-color: var(--main-color);
+}
+.card-2 p {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.about-me .title {
+  font-size: 1.1rem;
+  color: var(--main-body-color);
+  font-weight: 600;
+}
+.skills .adjust-progress {
+  --bs-progress-height: 0.7rem;
+  --bs-progress-border-radius: 0;
+}
+.skills .progress-85 {
+  width: 85%;
+}
+.skills .progress-90 {
+  width: 90%;
+}
+.skills p:nth-child(1) {
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+}
+.skills p {
+  margin: 1rem 0 0.5rem 0;
+}
+.services p::after {
 }
