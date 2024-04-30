@@ -25,7 +25,6 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6 {
   text-decoration: none;
   font-size: 3rem;
@@ -59,6 +58,7 @@ header .content {
 header h2 {
   font-size: 2.6rem;
   margin-bottom: 7rem;
+  text-transform: none;
 }
 header span {
   color: var(--white-color);
@@ -131,6 +131,7 @@ header span {
 .card-2 h5 {
   font-size: 2rem;
   position: relative;
+  text-transform: none;
 }
 .card-2 h5::after {
   content: "";
@@ -168,6 +169,25 @@ header span {
 }
 .skills p {
   margin: 1rem 0 0.5rem 0;
+  position: relative;
 }
-.services p::after {
+.services p {
+  position: relative;
+}
+.services .title-services::after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  height: 18%;
+  display: block;
+  background-color: var(--main-color);
+  margin-top: 0.2rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.services .card-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.4rem 0;
 }
