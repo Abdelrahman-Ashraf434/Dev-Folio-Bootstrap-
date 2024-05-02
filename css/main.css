@@ -35,6 +35,20 @@ h6 {
 nav .container a {
   font-weight: 600;
   padding: 0.5rem;
+  position: relative;
+}
+nav .container a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--white-color);
+  left: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  bottom: 0.5rem;
+}
+nav .container a:hover::before {
+  width: 65%;
 }
 nav .container ul li {
   padding: 0 0.5rem;
@@ -57,7 +71,7 @@ header .content {
 }
 header h2 {
   font-size: 4.5rem;
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
   text-transform: none;
 }
 header h2::after {
@@ -135,7 +149,6 @@ header h2::after {
 }
 .card-2 h5 {
   font-size: 2rem;
-  position: relative;
   text-transform: none;
 }
 .card-2 h5::after {
@@ -148,7 +161,7 @@ header h2::after {
   background-color: var(--main-color);
 }
 .card-2 p {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   font-size: 1.2rem;
   font-weight: 100;
 }
@@ -156,6 +169,13 @@ header h2::after {
   font-size: 1.1rem;
   color: var(--main-body-color);
   font-weight: 600;
+}
+.sub-about-me {
+  padding: 3rem 0rem;
+  position: relative;
+  background-color: #fff;
+  padding-bottom: 5rem;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .skills .adjust-progress {
   --bs-progress-height: 0.7rem;
@@ -174,10 +194,6 @@ header h2::after {
 }
 .skills p {
   margin: 1rem 0 0.5rem 0;
-  position: relative;
-}
-.services p {
-  position: relative;
 }
 .title-services::after {
   content: "";
@@ -239,9 +255,6 @@ header h2::after {
   font-size: 1rem;
   color: var(--white-color);
 }
-.portfolio p {
-  position: relative;
-}
 .card:hover .img-port {
   transform: scale(1.3);
 }
@@ -274,4 +287,88 @@ header h2::after {
 }
 .content-port p span {
   font-size: 0.8rem;
+}
+.name img {
+  width: 30px;
+}
+.blog .content-blog {
+  width: 22%;
+  padding: 0.5rem;
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact {
+  background-image: linear-gradient(
+      rgb(13, 97, 194, 0.8),
+      rgb(13, 97, 194, 0.8)
+    ),
+    url(/Images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.sub-contact {
+  padding: 3rem 3rem;
+  position: relative;
+  background-color: #fff;
+}
+.sub-contact h5 {
+  font-size: 2rem;
+  text-transform: none;
+  padding-bottom: 1.5rem;
+}
+.sub-contact h5::after {
+  content: "";
+  position: absolute;
+  width: 8%;
+  margin-top: 0.2rem;
+  height: 0.7%;
+  display: block;
+  background-color: var(--main-color);
+}
+.sub-contact input {
+  padding: 0.6rem;
+}
+.col-Touch p:nth-of-type(1) {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.col-Touch ul li {
+  padding: 0.5rem 0rem;
+}
+.col-Touch ul li i {
+  color: var(--main-color);
+}
+.contact-icons i {
+  border: 4px solid var(--main-color);
+  border-radius: 50%;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-icons i:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-color: #cde1f8;
+}
+footer {
+  background-color: #0062d3;
+}
+footer p {
+  color: var(--white-color);
+  margin: 0;
+}
+footer .credits {
+  padding: 2rem;
+}
+.contact button {
+  font-size: 1.2rem;
 }
