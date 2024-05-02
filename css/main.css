@@ -56,14 +56,18 @@ header .content {
   transform: translate(-50%, -50%);
 }
 header h2 {
-  font-size: 2.6rem;
+  font-size: 4.5rem;
   margin-bottom: 7rem;
   text-transform: none;
 }
-header span {
+header h2::after {
+  content: "Developer";
+  display: block;
+  font-size: 3rem;
   color: var(--white-color);
   font-weight: 700;
-  animation: Word 4s infinite;
+  animation: Word 2s infinite;
+  padding-top: 1rem;
 }
 @keyframes Word {
   0% {
@@ -196,7 +200,7 @@ header span {
   font-size: 2.5rem;
   border: 8px solid var(--main-color);
   border-radius: 50%;
-  width: 36%;
+  width: 33%;
   padding: 1.5rem;
   align-self: center;
   transition: all 0.2s ease-in-out;
@@ -247,6 +251,7 @@ header span {
 .port-img {
   overflow: hidden;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 .icon-port {
   color: var(--main-color);
