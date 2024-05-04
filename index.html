@@ -13,7 +13,7 @@
       <div class="container d-flex justify-content-between">
         <a class="navbar-brand text-white fs-3" href="#">DevFolio</a>
         <button
-          class="navbar-toggler text-white btn-toggle"
+          class="navbar-toggler bg-white border-0 btn-toggle"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -21,7 +21,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon text-white"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div
@@ -109,7 +109,7 @@
         <div class="container">
           <div class="bg-white sub-about-me">
             <div class="row justify-content-center">
-              <div class="col-sm-12 col-lg-6 bg-white">
+              <div class="col-sm-12 col-lg-6">
                 <div class="row">
                   <div class="col-12 col-lg-5">
                     <img
@@ -175,7 +175,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-5 bg-white card-2 content">
+              <div class="col-12 col-lg-5 card-2 content">
                 <h5 class="position-relative">About me</h5>
                 <p>
                   Curabitur non nulla sit amet nisl tempus convallis quis ac
@@ -475,9 +475,79 @@
           </div>
         </div>
       </section>
-      <section class="Carousel"></section>
+      <section class="Carousel text-center adjust-carousel">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner d-flex carousel-items">
+                  <div class="carousel-item active adjust-carousel-item">
+                    <div class="carousel-body d-flex justify-content-center">
+                      <img
+                        src="./Images/testimonial-2.jpg"
+                        class="d-block img-fluid rounded-circle"
+                        alt="..."
+                      />
+                    </div>
+                    <div
+                      class="carousel-caption d-md-block adjust-carousel-caption"
+                    >
+                      <h5 class="text-uppercase">Xavi Alonso</h5>
+                      <p>
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                        at sem. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item adjust-carousel-item">
+                    <div class="carousel-body d-flex justify-content-center">
+                      <img
+                        src="./Images/testimonial-4.jpg"
+                        class="d-block img-fluid rounded-circle"
+                        alt="..."
+                      />
+                    </div>
+                    <div
+                      class="carousel-caption d-md-block adjust-carousel-caption"
+                    >
+                      <h5 class="text-uppercase">Marta Socrate</h5>
+                      <p>
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                        at sem. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-indicators adjust-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active adjust-button"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                    class="adjust-button"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="blog" class="blog pt-5 pb-5">
-        <!--@Media-->
         <div class="container">
           <h3 class="text-center">BLOG</h3>
           <p class="title-services text-center position-relative">

@@ -70,14 +70,14 @@ header .content {
   transform: translate(-50%, -50%);
 }
 header h2 {
-  font-size: 4.5rem;
+  font-size: 1.9rem;
   margin-bottom: 3rem;
   text-transform: none;
 }
 header h2::after {
   content: "Developer";
   display: block;
-  font-size: 3rem;
+  font-size: 1.6rem;
   color: var(--white-color);
   font-weight: 700;
   animation: Word 2s infinite;
@@ -171,7 +171,7 @@ header h2::after {
   font-weight: 600;
 }
 .sub-about-me {
-  padding: 3rem 0rem;
+  padding: 3rem 2rem;
   position: relative;
   background-color: #fff;
   padding-bottom: 5rem;
@@ -198,7 +198,7 @@ header h2::after {
 .title-services::after {
   content: "";
   position: absolute;
-  width: 5%;
+  width: 18%;
   height: 18%;
   display: block;
   background-color: var(--main-color);
@@ -216,7 +216,7 @@ header h2::after {
   font-size: 2.5rem;
   border: 8px solid var(--main-color);
   border-radius: 50%;
-  width: 33%;
+  width: 31%;
   padding: 1.5rem;
   align-self: center;
   transition: all 0.2s ease-in-out;
@@ -241,7 +241,7 @@ header h2::after {
   color: var(--white-color);
   border: 10px solid #cde1f8;
   border-radius: 50%;
-  width: 36%;
+  width: 31%;
   padding: 1.5rem;
   font-weight: 800;
   font-size: 1.5rem;
@@ -291,13 +291,46 @@ header h2::after {
 .name img {
   width: 30px;
 }
+/**/
+.adjust-carousel {
+  padding: 6rem 0;
+  background-image: linear-gradient(rgb(75 158 255 / 80%), rgb(0 118 255 / 80%)),
+    url(/Images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.adjust-carousel-caption {
+  position: static;
+}
+.adjust-indicators {
+  position: static;
+}
+.adjust-indicators .adjust-button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.adjust-carousel-caption p {
+  font-size: 1.3rem;
+  padding: 0rem 0rem;
+  font-weight: 300;
+}
+.adjust-carousel-caption h5 {
+  font-size: 1.5rem;
+}
+/**/
 .blog .content-blog {
-  width: 22%;
+  width: 26%;
   padding: 0.5rem;
   display: block;
   text-align: center;
   position: absolute;
-  top: 60%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -328,7 +361,7 @@ header h2::after {
 .sub-contact h5::after {
   content: "";
   position: absolute;
-  width: 8%;
+  width: 22%;
   margin-top: 0.2rem;
   height: 0.7%;
   display: block;
@@ -371,4 +404,26 @@ footer .credits {
 }
 .contact button {
   font-size: 1.2rem;
+}
+@media (min-width: 1024px) {
+  .blog .content-blog {
+    width: 22%;
+    top: 59%;
+  }
+  header h2::after {
+    font-size: 3rem;
+  }
+  header h2 {
+    font-size: 4.5rem;
+  }
+  .sub-contact h5::after {
+    width: 8%;
+  }
+  .title-services::after {
+    width: 5%;
+  }
+  .adjust-carousel-caption p {
+    font-size: 1.3rem;
+    padding: 1rem 10rem;
+  }
 }
