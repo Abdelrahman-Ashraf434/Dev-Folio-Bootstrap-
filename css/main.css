@@ -83,6 +83,7 @@ header h2::after {
   animation: Word 2s infinite;
   padding-top: 1rem;
 }
+/*----------------About Section---------------------*/
 @keyframes Word {
   0% {
     content: "|";
@@ -195,6 +196,8 @@ header h2::after {
 .skills p {
   margin: 1rem 0 0.5rem 0;
 }
+/*----------------Services Section---------------------*/
+
 .title-services::after {
   content: "";
   position: absolute;
@@ -226,6 +229,8 @@ header h2::after {
   color: var(--white-color);
   box-shadow: 0 0 0 10px #cde1f8;
 }
+/*----------------Experinces Section---------------------*/
+
 .experinces {
   background-image: linear-gradient(
       rgb(13, 97, 194, 0.8),
@@ -255,6 +260,8 @@ header h2::after {
   font-size: 1rem;
   color: var(--white-color);
 }
+/*----------------Portfolio Section---------------------*/
+
 .card:hover .img-port {
   transform: scale(1.3);
 }
@@ -291,7 +298,8 @@ header h2::after {
 .name img {
   width: 30px;
 }
-/**/
+/*----------------Carousel Section---------------------*/
+
 .adjust-carousel {
   padding: 6rem 0;
   background-image: linear-gradient(rgb(75 158 255 / 80%), rgb(0 118 255 / 80%)),
@@ -323,7 +331,8 @@ header h2::after {
 .adjust-carousel-caption h5 {
   font-size: 1.5rem;
 }
-/**/
+/*----------------Blog Section---------------------*/
+
 .blog .content-blog {
   width: 26%;
   padding: 0.5rem;
@@ -334,6 +343,8 @@ header h2::after {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*----------------Contact Section---------------------*/
+
 .contact {
   background-image: linear-gradient(
       rgb(13, 97, 194, 0.8),
@@ -392,6 +403,8 @@ header h2::after {
   color: var(--white-color);
   border-color: #cde1f8;
 }
+/*----------------Footer---------------------*/
+
 footer {
   background-color: #0062d3;
 }
@@ -405,6 +418,8 @@ footer .credits {
 .contact button {
   font-size: 1.2rem;
 }
+/*----------------@Media---------------------*/
+
 @media (min-width: 1024px) {
   .blog .content-blog {
     width: 22%;
