@@ -55,7 +55,7 @@ nav .container ul li {
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(/Images/hero-bg.jpg);
+    url(./Images/hero-bg.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -231,7 +231,7 @@ header h2::after {
       rgb(13, 97, 194, 0.8),
       rgb(13, 97, 194, 0.8)
     ),
-    url(/Images/counters-bg.jpg);
+    url(./Images/counters-bg.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -295,7 +295,7 @@ header h2::after {
 .adjust-carousel {
   padding: 6rem 0;
   background-image: linear-gradient(rgb(75 158 255 / 80%), rgb(0 118 255 / 80%)),
-    url(/Images/overlay-bg.jpg);
+    url(./Images/overlay-bg.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -339,7 +339,7 @@ header h2::after {
       rgb(13, 97, 194, 0.8),
       rgb(13, 97, 194, 0.8)
     ),
-    url(/Images/overlay-bg.jpg);
+    url(./Images/overlay-bg.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
